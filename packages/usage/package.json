@@ -4,14 +4,23 @@
   "version": "1.0.0",
   "main": "src/app.js",
   "license": "MIT",
-  "scripts": {},
-  "dependencies": {
-    "@prisma/client": "3.7.0"
+  "scripts": {
+    "dev": "node-dev server/index.ts"
   },
   "devDependencies": {
     "@types/node": "16.11.7",
-    "prisma": "3.7.0",
-    "prisma-generator-trpc-fastify": "workspace:*",
+    "prisma": "4.5.0",
+    "ts-node": "^10.9.1",
     "typescript": "4.5.2"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.1.1",
+    "@prisma/client": "4.5.0",
+    "@trpc/server": "^9.27.4",
+    "fastify": "^4.9.2",
+    "node-dev": "^7.4.3",
+    "prisma-generator-trpc-fastify": "workspace:^1.0.0",
+    "prisma-trpc-generator": "^0.4.4",
+    "zod": "^3.19.1"
   }
 }
